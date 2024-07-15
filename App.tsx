@@ -16,14 +16,16 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './src/navigation/AppNavigator';
+import HomeScreen from './src/screens/Home/HomeScreen';
 
 function App(): JSX.Element {
   
   return (
-    <SafeAreaView>
-      <Text>React Native Boilerplate</Text>
-    </SafeAreaView>
+    <>
+      <AppNavigator />
+    </>
   );
 }
 
